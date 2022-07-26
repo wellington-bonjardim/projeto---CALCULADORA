@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Calculadora</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <br/>
+
+                <div class="calculator">
+                    <input id="result" type="text" class="form-control result" placeholder="0" readonly>
+
+                    <div class="row">
+                        <button onclick="calculate('action', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
+                        <button onclick="calculate('action', '/')" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
+                        <button onclick="calculate('action', '*')" type="button" class="btn btn-dark btn-lg font-weight-light">X</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calculate('value', 7)" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+                        <button onclick="calculate('value', 8)" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+                        <button onclick="calculate('value', 9)" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+                        <button onclick="calculate('action', '-')" type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calculate('value', 4)" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+                        <button onclick="calculate('value', 5)" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+                        <button onclick="calculate('value', 6)" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+                        <button onclick="calculate('action', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calculate('value', 1)" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+                        <button onclick="calculate('value', 2)" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+                        <button onclick="calculate('value', 3)" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+                        <button onclick="calculate('action', '=')" type="button" class="btn btn-warning btn-lg enter ">=</button>
+                    </div>
+
+                    <div class="row" style="margin-top: -60px;">
+                        <button onclick="calculate('value', 0)" type="button" class="btn btn-dark btn-lg font-weight-light zero">0</button>
+                        <button onclick="calculate('action', '.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <script src="script.js"></script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

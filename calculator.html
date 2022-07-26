@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>CALCULADORA</title>
+    <title>Calculadora</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,47 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <style>
-        .calculator {
-            margin-top: 40px;
-            border: 1px solid black;
-            padding: 20px;
-            background-color: #2E2E2E;
-            border-radius: 10px;
-            box-shadow: 1px 1px 5px black;
-        }
-
-        .btn {
-            width: 60px;
-            height: 50px;
-            margin: 5px;
-            box-shadow: 1px 1px 5px black;
-        }
-
-        .clear {
-            width: 130px;
-        }
-
-        .enter {
-            height: 110px;
-        }
-
-        .zero {
-            width: 130px;
-        }
-
-        .result {
-            text-align: right;
-            font-size: 20px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            border: 1px solid black;
-            box-shadow: 1px 1px 1px black;
-        }
-    </style>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
 
   </head>
-  <body style="background: #D9D9D9;">
+  <body>
 
     <div class="container">
         <div class="row">
@@ -95,29 +59,8 @@
         </div>
     </div>
       
-    <script>
-        function calculate(type, value) {
-            if (type === 'action') {
-
-                if (value === 'c') {
-                    document.getElementById('result').value = ''
-                }
-
-                if (value === '/' || value === '*' || value === '-' || value === '+' || value === '.') {
-                    document.getElementById('result').value += value
-                }
-                
-                if (value === '=') {
-                    var field_value = eval(document.getElementById('result').value)
-
-                    document.getElementById('result').value = field_value
-                }
-
-            } else if (type === 'value') {
-                document.getElementById('result').value += value
-            }
-        }
-    </script>
+    <script src="script.js"></script>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
